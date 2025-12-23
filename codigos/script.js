@@ -364,15 +364,6 @@ function initProjectCards() {
     });
 }
 
-document.querySelectorAll('.project-btn').forEach(btn => {
-  btn.addEventListener('click', e => {
-    // não bloqueia se existir href
-    const url = btn.getAttribute('data-link') || btn.getAttribute('href');
-    if (!url) return;
-    e.preventDefault(); // só previne se vamos controlar a abertura
-    window.open(url, '_blank', 'noopener'); 
-  });
-});
 
 // ============================================
 // SMOOTH SCROLL PARA LINKS ÂNCORA
