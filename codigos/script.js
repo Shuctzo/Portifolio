@@ -366,12 +366,13 @@ function initProjectCards() {
 
 document.querySelectorAll('.project-btn').forEach(btn => {
   btn.addEventListener('click', e => {
-    e.preventDefault();
-    const url = btn.getAttribute('data-link');
-    window.open(url, '_blank'); // abre em nova aba
+    // não bloqueia se existir href
+    const url = btn.getAttribute('data-link') || btn.getAttribute('href');
+    if (!url) return;
+    e.preventDefault(); // só previne se vamos controlar a abertura
+    window.open(url, '_blank', 'noopener'); 
   });
 });
-
 
 // ============================================
 // SMOOTH SCROLL PARA LINKS ÂNCORA
