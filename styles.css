@@ -289,7 +289,7 @@ a:hover {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10rem;
+    gap: clamp(2rem, 5vw, 6rem);
     align-items: center;
     position: relative;
     z-index: 1;
@@ -315,9 +315,10 @@ a:hover {
 }
 
 .hero-description {
+    font-size: clamp(1rem, 2vw, 1.4rem);
     color: var(--text-light);
     margin-bottom: var(--spacing-lg);
-    font-size: 1.6rem;
+    
 }
 
 .hero-cta {
@@ -333,7 +334,7 @@ a:hover {
 
 .profile-img {
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
     border-radius: 8px;
     border: 2px solid var(--primary-color);
     box-shadow: 0 0 30px var(--primary-color);
@@ -651,7 +652,7 @@ a:hover {
 .contact-card p {
     color: var(--text-light);
     margin-bottom: 0;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 
 /* ============================================
@@ -725,10 +726,14 @@ a:hover {
 /* ============================================
    RESPONSIVO - TABLET E MOBILE
    ============================================ */
-@media (max-width: 768px) {
-    :root {
-        --spacing-xl: 2rem;
-        --spacing-2xl: 2.5rem;
+
+   
+@media (max-width: 1024px) { 
+    
+    .hero-container { grid-template-columns: 1fr; 
+        gap: var(--spacing-xl); 
+        text-align: center; 
+    
     }
     
     .hero-container {
@@ -736,8 +741,14 @@ a:hover {
         gap: var(--spacing-lg);
     }
     
-    .hero-image {
-        order: -1;
+    .hero-image { 
+        order: -1; 
+        display: flex; 
+        justify-content: center; 
+    }
+
+    .profile-img { 
+        max-width: 250px; 
     }
     
     .area-content {
