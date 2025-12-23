@@ -616,7 +616,7 @@ a:hover {
 
 .contact-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     gap: var(--spacing-lg);
     margin-top: var(--spacing-xl);
 }
@@ -750,7 +750,7 @@ a:hover {
     .profile-img { 
         max-width: 250px; 
     }
-    
+
     .area-content {
         grid-template-columns: 1fr;
         gap: var(--spacing-lg);
