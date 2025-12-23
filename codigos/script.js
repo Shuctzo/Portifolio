@@ -364,6 +364,15 @@ function initProjectCards() {
     });
 }
 
+document.querySelectorAll('.project-btn').forEach(btn => {
+  btn.addEventListener('click', e => {
+    e.preventDefault();
+    const url = btn.getAttribute('data-link');
+    window.open(url, '_blank'); // abre em nova aba
+  });
+});
+
+
 // ============================================
 // SMOOTH SCROLL PARA LINKS ÂNCORA
 // ============================================
