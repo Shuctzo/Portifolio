@@ -39,9 +39,9 @@ Sou **Matheus**, um **Generalista em Tecnologia da Informação** com foco em **
 ---
 
 ## 📬 Contato
-- ✉️ Email: [seuemail@exemplo.com](mailto:seuemail@exemplo.com)  
-- 💼 LinkedIn: [linkedin.com/in/seuusuario](https://linkedin.com/in/seuusuario)  
-- 🌐 Website: [seuportifolio.com](https://seuportifolio.com)  
+- ✉️ Email: [matheusshuctzo@gmail.com](mailto:seuemail@exemplo.com)  
+- 💼 LinkedIn: [linkedin.com/in/matheus Marzagão](https://www.linkedin.com/in/matheus-marzag%C3%A3o-3ba160320/)  
+- 🌐 Website: [Portifolio.com](https://shuctzo.github.io/Portifolio/)  
 
 ---
 
